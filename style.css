@@ -4,6 +4,107 @@
   padding: 0;
 }
 
+body {
+  background-color: hsl(233, 47%, 7%);
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.wrapper {
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  margin: auto;
+  max-width: 1100px;
+  overflow: hidden;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.header-img {
+  height: 100%;
+}
+
+.overlay {
+  background-color: hsl(277, 64%, 61%);
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  mix-blend-mode: multiply;
+  width: 100%;
+}
+
+.insights {
+  background-color: hsl(244, 38%, 16%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+
+  padding: 0 5rem;
+}
+
+.heading,
+.data {
+  color: hsl(0, 0%, 100%);
+}
+
+.heading {
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+}
+
+.highlighted {
+  color: hsl(277, 64%, 61%);
+}
+
+.description {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.87rem;
+  line-height: 1.5rem;
+  padding-right: 3.5rem;
+}
+
+.stats-wrapper {
+  display: flex;
+  gap: 4rem;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.data {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.data-target {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.75rem;
+}
+
 .attribution {
   color: hsl(228, 45%, 44%);
   font-size: 11px;
